@@ -66,6 +66,10 @@ public Base(){
 
 
  }
+    public void explicitWaitNot(By element){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.not(ExpectedConditions.visibilityOfElementLocated(element)));
+    }
     public void setvalues(String key, String value)  {
         FileInputStream in = null;
         try {

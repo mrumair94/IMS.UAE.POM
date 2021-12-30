@@ -37,4 +37,8 @@ public class CreatePOTest extends Base {
     public void fillPoTest(){
        createPOPage.fillPoTest();
     }
+    @Test(priority = 3)
+    public void setPoNumberTest(){
+        createPOPage.setPoNumber();
+    }
 }
